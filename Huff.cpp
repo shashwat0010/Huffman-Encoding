@@ -50,9 +50,7 @@ void HuffmanCodes(char data[], int freq[], int size)
 		minHeap.pop(); 
 		right = minHeap.top(); 
 		minHeap.pop(); 
-		top = new MinHeapNode('$', 
-							left->freq + right->freq); 
-
+		top = new MinHeapNode('$', left->freq + right->freq); 
 		top->left = left; 
 		top->right = right; 
 
